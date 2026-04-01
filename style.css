@@ -1,0 +1,36 @@
+:root{
+    --bgColor: #9abdbe;
+    --bodyColor: #73949b;
+    --BlockBoxShadow: 5px 5px 20px -2px rgba(0, 0, 0, 0.35);
+}
+
+body {
+    margin: 0 10% 0 10%;
+    padding: 0;
+    background-color: var(--bodyColor);
+}
+#container {
+    display: flex;
+    flex-direction:column ;
+    width: 80vw;
+    align-items: center;
+    justify-content: center;
+}
+header, main, footer {
+    background-color: var(--bgColor);
+    border-radius: 10px;
+    box-shadow: var(--BlockBoxShadow);
+    margin-top: 5vh;
+    width: 80%;
+    text-align: center;
+    float: left;
+}
+header {
+    padding: 5%;
+    background-image: url(img/ulica.jpg);
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: right;
+    
+}
+
