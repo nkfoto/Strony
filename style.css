@@ -33,12 +33,12 @@ header, main, footer {
 }
 header {
     background-image: url(img/spacer-1.jpg);
-    background-size: 50%;
-    background-position: center;
+    background-size:20%;
+    background-position: right;
     background-repeat: no-repeat;
     justify-content: center;    
 }
-h1, h2, h3{
+h2, h3{
     display: flex;
     justify-content: center;
     text-shadow: 0px 3.5px 0px rgba(0, 0, 0, 1);
@@ -46,11 +46,12 @@ h1, h2, h3{
     
 }
 h1 {
-    font-size: 150px;
+    font-size: 50px;
     margin-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 16px;
+    text-shadow: 0px 3.5px 0px rgba(0, 0, 0, 1);
 
 }
 h2 {
@@ -65,19 +66,31 @@ h3 {
     border-radius: 10px;
     box-shadow: var(--blockBoxShadow);
 }
-p {
-    font-size: x-large;
+h4 {
+    font-size: 30px;
+    margin: 10px;
 }
+p, ol, ul {
+   
+    font-size: x-large;
+    text-align: center;
+    padding: 0;
+    
+}
+li {
+    list-style-position: inside;
+}
+
 a {
     color: var(--lightTextColor);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 19px;
     text-decoration: underline;
 }
 a:hover {
     color: var(--darkTextColor);
     text-decoration: underline;
-    font-size: 21px;
+    font-size: 19.5px;
 }
 
 .czymJestFotografiaUliczna, .czymJestFotografiaUliczna h2 {
