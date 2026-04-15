@@ -39,6 +39,10 @@ header {
     justify-content: center;    
 }
 
+main {
+    background-image: linear-gradient(to bottom, );
+}
+
 footer {
     padding: 35px 0;
     background-image: linear-gradient(to bottom, var(--bodyColor), var(--darkBgColor));
@@ -92,19 +96,19 @@ a {
     text-decoration: none;
     font-size: 19px;
     text-decoration: underline;
+    transition: 0.3s;
 }
 a:hover {
     color: var(--darkTextColor);
     text-decoration: underline;
-    font-size: 19.5px;
+    font-size: 22px;
 }
 
 #czymJestFotografiaUliczna, #czymJestFotografiaUliczna h2 {
     background-color: var(--darkBgColor);
     border-radius: 10px;
     box-shadow: var(--blockBoxShadow);
-    
-    
+
 }
 #czymJestFotografiaUliczna h2 {
     padding: 10px;
@@ -117,8 +121,7 @@ a:hover {
     display: grid;
     grid-template-columns: 50% 50%;
     justify-items: center;
-    
-    
+
 }
 #rodzaje section {
     background-image: linear-gradient(to bottom, var(--bodyColor), var(--darkBgColor));
@@ -128,14 +131,17 @@ a:hover {
     min-height: 80%;
     width: 100%;
     max-width: 60%;
-    aspect-ratio: 1 / 2 ;
-
+    aspect-ratio:  1 / 2 ;
     border-radius: 10px;
     box-shadow: var(--blockBoxShadow);
     
 }
-#dokumentalna {
+#dokumentalna, #portretowa, #detal, #candid {
     align-content: center;
+    transition: 0.3s;
+}
+#dokumentalna:hover, #portretowa:hover, #detal:hover, #candid:hover {
+    transform: scale(105%);
 }
 #detal, #detal img {
     align-content: center;

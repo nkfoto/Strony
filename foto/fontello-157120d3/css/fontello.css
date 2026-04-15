@@ -23,7 +23,7 @@
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
-  speak: never;
+  speak-as: never;
 
   display: inline-block;
   text-decoration: inherit;
@@ -52,8 +52,13 @@
 
   /* Uncomment for 3D effect */
    text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); 
+
+  transition: 0.3s;
 }
 
+[class^="icon-"]:hover, [class*=" icon-"]:hover {
+  font-size: 135%;
+}
 .icon-pinterest-circled:before { content: '\f0d2'; } /* '' */
 .icon-youtube:before { content: '\f167'; } /* '' */
 .icon-instagram:before { content: '\f16d'; } /* '' */
