@@ -38,6 +38,12 @@ header {
     background-repeat: no-repeat;
     justify-content: center;    
 }
+
+footer {
+    padding: 35px 0;
+    background-image: linear-gradient(to bottom, var(--bodyColor), var(--darkBgColor));
+    border: none;
+}
 h2, h3{
     display: flex;
     justify-content: center;
@@ -93,28 +99,28 @@ a:hover {
     font-size: 19.5px;
 }
 
-.czymJestFotografiaUliczna, .czymJestFotografiaUliczna h2 {
+#czymJestFotografiaUliczna, #czymJestFotografiaUliczna h2 {
     background-color: var(--darkBgColor);
     border-radius: 10px;
     box-shadow: var(--blockBoxShadow);
     
     
 }
-.czymJestFotografiaUliczna h2 {
+#czymJestFotografiaUliczna h2 {
     padding: 10px;
 }
-.czymJestFotografiaUliczna {
+#czymJestFotografiaUliczna {
     padding-block-end: 2%;
     margin: 10%;
 }
-.rodzaje {
+#rodzaje {
     display: grid;
     grid-template-columns: 50% 50%;
     justify-items: center;
     
     
 }
-.rodzaje section {
+#rodzaje section {
     background-image: linear-gradient(to bottom, var(--bodyColor), var(--darkBgColor));
     padding: 10px;
     margin: 10px;
@@ -128,18 +134,18 @@ a:hover {
     box-shadow: var(--blockBoxShadow);
     
 }
-.dokumentalna {
+#dokumentalna {
     align-content: center;
 }
-.detal, .detal img {
-    align-content: center;
-    width: 70%;
-}
-.portretowa, .portretowa img {
+#detal, #detal img {
     align-content: center;
     width: 70%;
 }
-.candid {
+#portretowa, #portretowa img {
+    align-content: center;
+    width: 70%;
+}
+#candid {
     align-content: center;
 
 }
@@ -148,7 +154,7 @@ img{
     width: 70%;
 }
 @media (max-width: 1010px) {
-   .rodzaje {
+   #rodzaje {
         grid-template-columns: auto;
     }
 }
